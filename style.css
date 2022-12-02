@@ -1,0 +1,142 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.circle {
+	border-radius: 50%;
+	background-color: #ffcd33;
+	position: absolute;
+}
+.circle_small {
+	width: 150px;
+	height: 150px;
+	top: -45px;
+	left: -45px;
+	z-index: 0;
+}
+.circle_big {
+	width: 800px;
+	height: 800px;
+	top: -75px;
+	right: -100px;
+	z-index: 0;
+}
+.header {
+	position: relative;
+	overflow:hidden;
+	display: grid;
+	grid-template-columns: 1fr 1fr 5fr 2fr;
+	grid-template-areas: "header-logo header-nav header-nav header-contacts" ". . header-text .";
+	grid-template-rows: 2fr 12fr;
+	grid-column-gap: 20px;
+	min-height: 768px;
+	align-items: center;
+	background-color: #fff9e6;
+	font-size: 18px;
+	
+	}
+	.header-logo {
+		grid-area: header-logo;
+		position: relative;
+		}
+		img { 
+		width:170px;
+		height:150px;
+
+	}
+	.header-nav {
+		grid-area: header-nav;
+		position: relative;
+		
+	}
+	.header-nav__link {
+		margin-right: 20px;
+		text-decoration: none;
+		color: #000;
+
+	}
+	.header-nav__link:last-child {
+		margin-right: 0;
+	}
+		
+	.header-contacts {
+		grid-area: header-contacts;
+		justify-self: center;
+		position: relative;
+		display: grid;
+		grid-template-columns: auto auto;
+		align-items: center;
+		
+	}
+	.header-contacts__link {
+		text-decoration: none;
+		color: #000;
+		margin-right: 28px;
+		text-transform: uppercase;
+	}
+	.header-contacts__phone {
+		font-size: 20px;
+		font-weight: 900;
+		
+	}
+	.header-contacts__callback {
+		font-size: 14px;
+		display: inline-block;
+	}
+	.header-contacts__callback:after {
+		content: '';
+		display: block;
+		width:100%;
+		height: 1px;
+		background-color: rgb(0, 0, 0);
+	}
+
+	.header-text {
+		grid-area: header-text;
+		position: relative;
+		display: grid;
+		grid-row-gap: 50px;
+		justify-content: start;
+	}
+	.header-itle {
+		font-size: 60px;
+		align-self: start;
+		max-width: 650px;
+		margin:0;
+	}
+	.header-subtitle {
+		font-size: 20px;
+	}
+	.header-img {
+		position: absolute;
+		top: 355px;
+		left: 370px;
+	}
+.button {
+	font-size: 14px;
+	text-decoration: none;
+	color:white;
+	background-color: #ff591f;
+	text-transform: uppercase;
+	font-weight: 700px;
+	padding: 20px 53px;
+	display: inline-block;
+	border-radius: 100px;
+	box-shadow: 0 10px 40px #ff591f;
+}
+.header-button {
+	
+}
+.link {
+	font-size: 14px;
+	text-decoration: none;
+	color:#ff591f;
+	text-transform: uppercase;
+	font-weight: 700px;
+	margin-left: 50px;
+	display: inline-block;
+	
+}
